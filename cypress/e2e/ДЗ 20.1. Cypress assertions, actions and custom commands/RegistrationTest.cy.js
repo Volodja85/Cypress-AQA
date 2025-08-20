@@ -2,9 +2,6 @@ import RegistrationPage from "../../support/pages/UI/RegistrationPage";
 import HomePage from "../../support/pages/UI/HomePage";
 
 describe("Перевірка вікна Registration", () => {
-  //const homepage = new HomePage();
-  //const registrationPage = new RegistrationPage();
-
   beforeEach(() => {
     cy.visit("/");
   });

@@ -1,6 +1,3 @@
-import HomePage from "./HomePage";
-import GaragePage from "./GaragePage";
-
 class RegistrationPage {
   get usernameInput() {
     return cy.get("#signupName");
@@ -52,12 +49,7 @@ class RegistrationPage {
 
   clickButtonRegister() {
     this.buttonRegister.click();
-    return new GaragePage();
-  }
-  reloadPage() {
-    cy.reload();
   }
 }
 
 export default new RegistrationPage();
-//export default RegistrationPage;

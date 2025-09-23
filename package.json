@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:open": "npx cypress open",
     "test:qauto": "cross-env ENV=qauto cypress run",
-    "test:qauto2": "cross-env ENV=qauto2 cypress run"
+    "test:qauto2": "cross-env ENV=qauto2 cypress run",
+    "test:api": "npx cypress run --spec \"cypress/e2e/ДЗ22.1-api/createCarIntercept.cy.js\" --browser chrome"
   },
   "keywords": [],
   "author": "",

@@ -17,15 +17,19 @@ module.exports = defineConfig({
   //   json: true,
   // },
   e2e: {
+    //baseUrl: "http://127.0.0.1:3000",
+    //baseUrl: "http://localhost:3000",
     baseUrl: envs[envTarget].baseUrl,
     // baseUrl: "https://guest:welcome2qauto@qauto.forstudy.space/",
     //baseUrl: "https://guest:welcome2qauto@qauto2.forstudy.space/",
     //specPattern: "cypress/e2e/ДЗ21.1/**/*.cy.js",
-    defaultCommandTimeout: 4000,
-    pageLoadTimeout: 6000,
+    //defaultCommandTimeout: 4000,
+    //pageLoadTimeout: 6000,
     specPattern: "cypress/e2e/**/*.cy.{js,ts}",
     setupNodeEvents(on, config) {
       // implement node event listeners here
     },
   },
+  video: false,
+  screenshotOnRunFailure: true,
 });

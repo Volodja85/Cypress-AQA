@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test:firefox": "npx cypress run --spec 'cypress/e2e/ДЗ19.1/**/*.cy.js' --browser firefox",
+    "test:chrome": "npx cypress run --spec 'cypress/e2e/ДЗ19.1/**/*.cy.js' --browser chrome",
     "test": "echo \"Error: no test specified\" && exit 1",
     "cy:open": "npx cypress open",
     "test:qauto": "cross-env ENV=qauto cypress run",
@@ -15,7 +17,7 @@
   "license": "ISC",
   "devDependencies": {
     "cross-env": "^10.0.0",
-    "cypress": "^14.5.4",
+    "cypress": "^13.17.0",
     "mochawesome": "^7.1.3"
   }
 }

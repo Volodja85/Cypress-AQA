@@ -8,6 +8,7 @@ describe("Перевірка кнопок хедера і футера", () => {
       .should("be.visible")
       .invoke("prop", "tagName")
       .should("eq", "BUTTON");
+    cy.screenshot("sign-up-button");
   });
 
   it("Перевірка кнопок хедера Contacts", () => {
@@ -27,6 +28,7 @@ describe("Перевірка кнопок хедера і футера", () => {
         .and("exist")
         .should("be.visible");
     });
+    cy.screenshot("header-buttons");
   });
 
   it("Перевірка назви посиланнь contact link", () => {
@@ -40,6 +42,7 @@ describe("Перевірка кнопок хедера і футера", () => {
     footerLinks.forEach((text) => {
       cy.contains(".contacts_link", text).and("exist").should("be.visible");
     });
+    cy.screenshot("footer-links");
   });
 
   it("Перевірка, що href містить текст 'ithillel.ua'", () => {
@@ -49,5 +52,6 @@ describe("Перевірка кнопок хедера і футера", () => {
       .then((href) => {
         expect(href).to.include("ithillel.ua");
       });
+    cy.screenshot("href-check");
   });
 });
